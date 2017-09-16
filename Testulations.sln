@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Library1", "..\Library1\Library1.fsproj", "{5E200039-84E4-445F-9865-53C8A06A6915}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TypescriptTypeGeneration", "TypescriptTypeGeneration\TypescriptTypeGeneration.fsproj", "{EB96903B-D479-4435-9B40-7E4E241C09D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E200039-84E4-445F-9865-53C8A06A6915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E200039-84E4-445F-9865-53C8A06A6915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E200039-84E4-445F-9865-53C8A06A6915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E200039-84E4-445F-9865-53C8A06A6915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB96903B-D479-4435-9B40-7E4E241C09D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB96903B-D479-4435-9B40-7E4E241C09D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB96903B-D479-4435-9B40-7E4E241C09D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB96903B-D479-4435-9B40-7E4E241C09D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08B4E190-CC52-44FD-9F8D-CBC6DF212A06}
+	EndGlobalSection
+EndGlobal
