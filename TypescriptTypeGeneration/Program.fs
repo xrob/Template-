@@ -3,6 +3,7 @@
 // Learn more about F# at http://fsharp.org
 // See the 'F# Tutorial' project for more help.
 open Newtonsoft.Json
+open System.IO
 
 [<EntryPoint>]
 let main argv = 
@@ -21,7 +22,10 @@ let main argv =
         |> TypeProvider.getClasses
         |> Seq.map (fun c -> JsonConvert.SerializeObject(c, new TypeJsonConverter.TypeJsonConverter()))
         |> Seq.map JsonConvert.DeserializeObject
-        |> Seq.map JsonConvert.SerializeObject
-        |> Seq.iter (printfn "%s")
+        |> Seq.map (fun obj -> JsonConvert.SerializeObject(obj, Formatting.Indented))
+        |> (fun json -> System.String.Join(",", json))
+        |> (fun allJson -> File.WriteAllText("stuff.json", allJson))
+    
+    printfn "All done!"
     System.Console.Read() |> ignore
     0 // return an integer exit code
